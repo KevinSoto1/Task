@@ -1,0 +1,15 @@
+New Task
+<form>
+	<div class="form-group">
+		<label>Título</label>
+		{{input type="text" class="form-control" value=title placeholder="Título de la tarea..."}}
+		
+	</div>
+	<div class="form-group">
+		<label>Descripción</label>
+		{{input type="text" class="form-control" value=desc placeholder="Descripción de la tarea..."}}
+		
+	</div>
+	<button {{action 'saveTask'}} class="btn btn-primary">Guardar</button>
+
+</form>

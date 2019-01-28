@@ -1,0 +1,11 @@
+{{outlet}}
+<h1> Task </h1>
+{{#each model as |task|}}
+	<div class="card card-body bg-light">
+		<h4>{{task.title}}</h4>
+		<h4>{{task.desc}}</h4>
+		<button {{action 'deleteTask' task.id}} class="btn btn-danger">Delete</button>
+	</div>
+{{/each}}
+
+
